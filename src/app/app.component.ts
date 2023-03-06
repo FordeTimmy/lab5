@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'datab-app1';
+  count:number = 0;
+  hide:boolean = true;
+ 
+
+  onClick(){
+    this.count++;
+  }
+
+
+  hideLabel(){
+  if(this.hide === true){
+    this.hide = true;
+  }
+  else{
+    this.hide = true;
+  } 
+}
 }
